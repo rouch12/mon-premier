@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+
+
+{% load static %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messagerie</title>
-    <link rel="stylesheet" href="./assets/chat.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/chat.css' %}">
 </head>
 <body>
     <div class="chat-container">
@@ -35,6 +37,6 @@
             <button id="sendMessageBtn">Envoyer</button>
         </div>
     </div>
-    <script src="./assets/js/java.js"></script>
+    <script src="{% static 'assets/js/java.js' %}"></script>
 </body>
 </html>

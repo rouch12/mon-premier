@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'mychatproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': BASE_DIR / 'rouch',
-        'USER' : 'moi',
-        'PASSWORD' : 'vous',
+        'NAME': 'mydjangodb_new',
+        'USER' : 'django_user_new',
+        'PASSWORD' : 'rouchdam',
         'HOST' : 'localhost',
         'PORT': '3306',
         'OPTIONS': {
@@ -124,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
